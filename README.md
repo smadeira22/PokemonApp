@@ -15,12 +15,12 @@ In this app you can discover pokemons's abilities
    - Type `cd [folder name]`
 
 - Clone repo onto your machine
-   - Type `git clone  `
+   - Type `git clone https://github.com/smadeira22/PokemonApp.git `
 
 - Open repository 
-   - Type `cd  `
+   - Type `cd PokemonApp`
 
-- Install required dependencies, including live server 
+- Install required dependencies
    - Type `npm install`
 
 - To open local host
