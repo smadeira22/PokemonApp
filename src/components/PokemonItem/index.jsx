@@ -10,7 +10,7 @@ const PokemonItem = ({ pokemon }) => {
 
   async function getData() {
     try {
-      const url = `https://pokeapi.co/api/v2/pokemon/` + pokemon.text
+      const url = `https://pokeapi.co/api/v2/pokemon/${pokemon.text}`
       const response = await fetch(url)
       const data = await response.json()
       setData(data.abilities)
@@ -38,7 +38,6 @@ const PokemonItem = ({ pokemon }) => {
     <h1> {pokemon.text}'s abilities</h1>
      <li className="pokemon">
       <span className="pokemon-item">
-           
            {data.map(b => <li> {b.ability.name} </li>)}
       </span>
       </li>
