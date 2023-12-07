@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rosybrown;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+header,
+form,
+.fact-box {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+  border-radius: 0.5rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+form button {
+  color: palevioletred;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 0.5rem;
+}
+ form button:focus {
+  color: yellow;
+  background-color: yellow;
+  width: 250px;
+ }
+
+input[type=text] {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 1.6rem;
+}
+
+form button:hover {
+  background-color: palevioletred;
+  color: white;
+}
+
+.pokemon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokemon-list {
+  min-width: 50%;
+  list-style: none;
+}
+
+.pokemon {
+  margin: 0.5rem;
+  background: white;
+  /* padding: 1px; */
+  font-size: 1.5rem;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+  border-radius: 0.5rem;
+}
+
+.filter-todo {
+  padding: 1rem;
+}
+
+.pokemon-item {
+  flex: 1;
+  padding: 0rem 0.5rem;
+}
+
+
+
+ 
+.fall {
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity: 0;
+}
+
+ 
+
+select {
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+select {
+  color: palevioletred;
+  cursor: pointer;
+  width: 12rem;
+}
+
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: palevioletred;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+.fact-box {
+  padding: 1rem;
+}
