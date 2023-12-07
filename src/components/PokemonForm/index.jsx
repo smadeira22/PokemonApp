@@ -19,7 +19,7 @@ const PokemonForm = (props) => {
   }
 
   return (
-    <form aria-label="search for pokemon" onSubmit={handleSubmit}>
+    <form aria-label="enter pokemon name" onSubmit={handleSubmit}>
       <label htmlFor="pokemon" style={{ marginRight: "10px " }}>
         Pokemon name:
       </label>
